@@ -23,7 +23,7 @@ class BusNearBy(object):
             return await response.json()
 
     async def get_bus_times_data(self, session: aiohttp.ClientSession, stop_id: str, current_time: int) -> List[Dict]:
-        url = f"{self.base_url}/directions/index/stops/1:{stop_id}/stoptimes?numberOfDepartures=1&timeRange=86400&startTime={current_time}&locale=he"
+        url = f"https://api.busnearby.co.il/directions/index/stops/1:{stop_id}/stoptimes?numberOfDepartures=1&timeRange=86400&startTime={current_time}&locale=he"
         async with session.get(url) as response:
             response.raise_for_status()
             return await response.json()
