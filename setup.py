@@ -14,9 +14,6 @@ setup_args = dict(
     long_description=readme,
     license='MIT',
     packages=find_packages(),
-    install_requires=[
-        'aiohttp>=3.8.0',
-    ],
     python_requires='>=3.7',
     author='Tomer Klein',
     author_email='tomer.klein@gmail.com',
@@ -29,6 +26,11 @@ setup_args = dict(
     },
 )
 
+
+
+install_requires=[
+        'aiohttp>=3.8.0',
+     ]
 
 if __name__ == '__main__':
     setup(**setup_args, install_requires=install_requires)
