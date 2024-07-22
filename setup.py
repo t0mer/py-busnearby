@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="UTF-8") as f:
 
 setup_args = dict(
     name='busnearby',
-    version='0.1.1',
+    version='0.1.2',
     description='A library to get bus times from the Bus Nearby API',
     long_description_content_type="text/markdown",
     long_description=readme,
