@@ -7,13 +7,13 @@ A Python library to get bus times from the Bus Nearby API https://www.busnearby.
 You can install the library from PyPI:
 
 ```bash
-pip install bus_times
+pip install busnearby
 ```
 
 Alternatively, you can install it directly from the source:
 
 ```bash
-git clone https://github.com/yourusername/bus_times.git
+git clone https://github.com/t0mer/py-busnearby.git
 cd bus_times
 pip install .
 ```
